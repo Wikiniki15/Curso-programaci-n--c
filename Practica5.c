@@ -7,7 +7,7 @@ int main()
 	printf("Introduzca la nota del alumno: \n");
 	scanf("%d", &nota);
 
-	if (nota<5)
+	if (nota>=0 && nota<=5)
 	{
 	    printf("Reprueba");
     }
