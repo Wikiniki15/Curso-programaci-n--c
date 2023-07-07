@@ -4,6 +4,8 @@ int main()
 {
     float pesos[5];
     float suma=0;
+    int mayor=0;
+    int menor=0;
 
     for(int i = 0; i < 5; i++)
     {
@@ -14,8 +16,6 @@ int main()
     }
 
     float promedio=suma/5;
-    int mayor=0;
-    int menor=0;
 
     for(int i = 0; i < 5; i++){
 
