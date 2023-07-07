@@ -5,14 +5,15 @@ int main()
 {
     char cadena[50];
     char caracter;
+    int i=0;
+    int pos=-1;
 
     printf("Introduzca una cadena: \n");
     gets(cadena);
     printf("Introduzca un caracter: \n");
     caracter=getchar();
 
-    int i=0;
-    int pos=-1;
+
     while(cadena[i]!='\0' && pos==-1)
     {
         if(cadena[i]==caracter)
