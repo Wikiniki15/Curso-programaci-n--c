@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-void multiplica_vector(int *vector, int nElen, int numero);
+void multiplica_vector(int *vector, int nElen, int numero)
+{
+    for (int i=0; i<nElen;i++)
+    {
+        *(vector+i)=*(vector+i)*numero;
+    }
+}
 
 int main()
 {
@@ -11,13 +17,5 @@ int main()
     for (int i = 0; i < 10; i++)
     {
         printf("%d ", vector[i]);
-    }
-}
-
-void multiplica_vector(int *vector, int nElen, int numero)
-{
-    for (int i=0; i<nElen;i++)
-    {
-        *(vector+i)=*(vector+i)*numero;
     }
 }
